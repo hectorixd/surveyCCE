@@ -8,7 +8,7 @@
       href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
     <script
       src="https://kit.fontawesome.com/b0369a2e6b.js"
@@ -66,44 +66,55 @@
             <h1>¿Qué tipo de trámite solicitaste?</h1>
           </div>
           <section class="mid-container">
-            <div>
-              <h2>Primer ingreso:</h2>
-              <ul>
-                <li>
-                  <input type="radio" name="ingreso" value="aspirante" />
-                  <label for="aspirante">Trámite de aspirante</label>
-                </li>
-              </ul>
+            <div class="dropdown">
+              <label for="ingreso"
+                >Primer ingreso:
+                <select name="tramites">
+                  <option value="solicitud">Solicitud de ingreso</option>
+                  <option value="entrega">Entrega de documentos</option>
+                  <option value="devolucion">Devolucion de documentos</option>
+                  <option value="duplicado"
+                    >Duplicado de solicitud de ingreso</option
+                  >
+                  <option value="informes">Informes</option>
+                </select>
+              </label>
             </div>
-            <div>
-              <h2>Alumnos:</h2>
-              <ul>
-                <li>
-                  <input type="radio" name="alumnos" value="baja" />
-                  <label for="baja">Baja voluntaria</label>
-                </li>
-                <li>
-                  <input type="radio" name="alumnos" value="constancia" />
-                  <label for="constancia">Constancia</label>
-                </li>
-                <li>
-                  <input type="radio" name="alumnos" value="holograma" />
-                  <label for="holograma">Holograma</label>
-                </li>
-              </ul>
+            <div class="dropdown">
+              <label for="alumnos"
+                >Alumnos:
+                <select name="tramites">
+                  <option value="cons-simple"
+                    >Constancia simple / con horario</option
+                  >
+                  <option value="cons-calificacion"
+                    >Constancia con calificación</option
+                  >
+                  <option value="kardex">Kardex</option>
+                  <option value="re-credencial">Recojer credencial</option>
+                  <option value="holograma">Holograma</option>
+                  <option value="copia-documentos">Copia de documentos</option>
+                  <option value="nip">Recuperación de NIP</option>
+                  <option value="acreditacion"
+                    >Acreditación / Revalidación de materias</option
+                  >
+                  <option value="informes">Informes</option>
+                </select>
+              </label>
             </div>
-            <div>
-              <h2>Egresados:</h2>
-              <ul>
-                <li>
-                  <input type="radio" name="egresados" value="certificado" />
-                  <label for="certificado">Certificado</label>
-                </li>
-                <li>
-                  <input type="radio" name="egresados" value="adeudo" />
-                  <label for="adeudo">Constancia de no adeudo</label>
-                </li>
-              </ul>
+            <div class="dropdown">
+              <label for="egresados"
+                >Egresados:
+                <select name="tramites">
+                  <option value="certificado">Certificado</option>
+                  <option value="titulo">Registro de título</option>
+                  <option value="pasante">Carta de pasante</option>
+                  <option value="cons-eg">Constancia de egresado</option>
+                  <option value="cons-adeudo">Constancia de no adeudo</option>
+                  <option value="copia">Copia de acta de titulación</option>
+                  <option value="informes">Informes</option>
+                </select>
+              </label>
             </div>
           </section>
           <div class="btn-div">
