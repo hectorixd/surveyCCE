@@ -66,41 +66,51 @@
             <h1>¿Qué tipo de trámite solicitaste?</h1>
           </div>
           <section class="mid-container">
+            <h2>Primer ingreso:</h2>
             <div class="dropdown">
-              <label for="ingreso"
-                >Primer ingreso:
-                <select name="tramites">
-                  <option value="solicitud">Solicitud de ingreso</option>
-                  <option value="entrega">Entrega de documentos</option>
-                  <option value="devolucion">Devolucion de documentos</option>
-                  <option value="duplicado"
-                    >Duplicado de solicitud de ingreso</option
-                  >
-                  <option value="informes">Informes</option>
-                </select>
-              </label>
+              <div class="title pointerCursor">
+                Escoge una opción: <i class="fa fa-angle-right"></i>
+              </div>
+              <div class="menu pointerCursor hide">
+                <div class="option" id="option1" 
+                  >Entrega de documentos</div
+                >
+                <div class="option" id="option2" 
+                  >Solicitud de ingreso</div
+                >
+                <div class="option" id="option3" 
+                  >Devolucion de documentos</div
+                >
+                <div class="option" id="option4" 
+                  >Duplicado de solicitud de ingreso</div
+                >
+                <div class="option" id="option5">Informes</div>
+              </div>
             </div>
-            <div class="dropdown">
-              <label for="alumnos"
-                >Alumnos:
-                <select name="tramites">
-                  <option value="cons-simple"
-                    >Constancia simple / con horario</option
-                  >
-                  <option value="cons-calificacion"
-                    >Constancia con calificación</option
-                  >
-                  <option value="kardex">Kardex</option>
-                  <option value="re-credencial">Recojer credencial</option>
-                  <option value="holograma">Holograma</option>
-                  <option value="copia-documentos">Copia de documentos</option>
-                  <option value="nip">Recuperación de NIP</option>
-                  <option value="acreditacion"
-                    >Acreditación / Revalidación de materias</option
-                  >
-                  <option value="informes">Informes</option>
-                </select>
-              </label>
+            <h2>Alumnos:</h2>
+            <div class="dropdown">              
+                <div class="title pointerCursor">
+                    Escoge una opción: <i class="fa fa-angle-right"></i>
+                  </div>
+                  <div class="menu pointerCursor hide">
+
+                    <div class="option" id="option1">Constancia simple / con horario</div
+                    >
+                    <div class="option" id="option2"
+                      >Constancia con calificación</div
+                    >
+                    <div class="option" id="option3">Kardex</div>
+                    <div class="option" id="option4">Recojer credencial</div>
+                    <div class="option" id="option5">Holograma</div>
+                    <div class="option" id="option6">Copia de documentos</div>
+                    <div class="option" id="option7">Recuperación de NIP</div>
+                    <div class="option" id="option8"
+                      >Acreditación / Revalidación de materias</div
+                    >
+                    <div class="option" id="option9">Informes</div>
+                  </div>
+                
+              </div>
             </div>
             <div class="dropdown">
               <label for="egresados"
