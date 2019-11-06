@@ -1,44 +1,85 @@
 /* Variables */
 :root {
-  --parentBg: #ffffff;
-  --color: #2c365e;
-  --bg: #70b4e0;
-  --border: #35a0b1;
+  /* Main color */
+  --bgColor: #ffffff;
+  --textColor: #2c365e;
 }
 
-/* Reset */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+/* UTILITY */
+/* Padding */
+.pt {
+  padding-top: 1rem;
+}
+.pr {
+  padding-right: 1rem;
+}
+.pb {
+  padding-bottom: 1rem;
+}
+.pl {
+  padding-left: 1rem;
+}
+.px {
+  padding: 0 1rem;
+}
+.py {
+  padding: 1rem 0;
 }
 
-body {
+/* Typography */
+.title-1 {
+  font-size: 1.8rem;
+}
+.title-2 {
+  font-size: 1.6rem;
+}
+.title-3 {
+  font-size: 1.4rem;
+}
+.title-4 {
+  font-size: 1.2rem;
+}
+.text-1 {
+  font-size: 1.2rem;
+}
+.text-2 {
+  font-size: 0.8rem;
+}
+.text-space {
+  letter-spacing: 0.2rem;
+}
+.typo-bold {
+  font-weight: 800;
+}
+.typo-midBold {
+  font-weight: 400;
+}
+
+/* GENERAL */
+#main-container {
   font-family: 'Roboto', sans-serif;
   line-height: 1.5;
-  color: var(--color);
-  background-color: var(--parentBg);
+  color: var(--textColor);
+  background-color: var(--bgColor);
 }
 
-a {
-  text-decoration: none;
-}
-
-ul {
-  list-style: none;
-}
-
-/* Utility classes */
 .page-container {
   display: grid;
   grid-template-rows: 1fr 6fr 1fr;
   height: 100vh;
 }
 
+/* COMPONENTS */
+
+/* Button */
 .btn {
-  display: inline-block;
-  color: var(--parentBg);
-  background: var(--bg);
+  --btnBgColorPrimary: #70b4e0;
+  --btnBgColorSecondary: #479ad1;
+  --btnBorderColor: #35a0b1;
+
+  display: block;
+  color: var(--bgColor);
+  background: var(--btnBgColorPrimary);
   padding: 0.5rem 2rem;
   border: none;
   border-radius: 5px;
@@ -46,10 +87,11 @@ ul {
 }
 
 .btn:hover {
-  color: var(--parentBg);
-  background: #479ad1;
+  color: var(--bgColor);
+  background: var(--btnBgColorSecondary);
 }
 
+/* Face answer */
 .answer-op div:hover {
   background: #c2e7ff;
   cursor: pointer;
@@ -60,27 +102,13 @@ ul {
   display: block;
 }
 
-.header-content div {
+/* .header-content div {
   padding: 1.5rem;
-}
+} */
 
-.header-content h1 {
-  font-size: 1.3rem;
-  font-weight: 800;
-}
-
-.header-content h2 {
-  font-size: 1.2rem;
-  font-weight: 400;
-}
-
-.header-content .initial-text {
+/* .header-content .initial-text {
   font-size: 2rem;
-}
-
-.header-content ul li span {
-  letter-spacing: 0.25rem;
-}
+} */
 
 /* Mid-content */
 .mid-content,
@@ -96,14 +124,14 @@ ul {
   align-self: center;
 }
 
-.mid-content h1 {
+/* .mid-content h1 {
   font-size: 1.8rem;
   padding: 0 4rem;
 }
 
 .mid-content p {
   font-size: 1.2rem;
-}
+} */
 
 .mid-content div .answer-op {
   display: flex;
@@ -122,39 +150,6 @@ ul {
 }
 
 /* Selección de trámites página 2 */
-/* .mid-container {
-  display: flex;
-  justify-content: space-between;
-  margin: 1rem 0 0 0;
-}
-
-.mid-container div {
-  padding: 0rem 3rem 0rem 0rem;
-  text-align: left;
-}
-
-.mid-container div h2 {
-  font-size: 1.3rem;
-}
-
-.mid-container div ul {
-  display: flex;
-  flex-direction: row;
-}
-
-.mid-container div ul li {
-  padding: 0.5rem 0rem 0rem 0rem;
-}
-
-.mid-container ul:nth-child(2),
-.mid-container ul:last-child {
-  display: flex;
-  flex-direction: column;
-}
-
-.mid-container div:last-child {
-  padding: 0;
-} */
 
 /* Comentarios página 7 */
 .mid-content div .coment-text {
