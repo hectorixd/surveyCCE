@@ -16,10 +16,10 @@
     ></script>
     <title>Encuesta de satisfacción | CCECUCEI</title>
   </head>
-  <body>
+  <body class="stop-scrolling">
     <!-- Página 1 -->
     <main id="main-container">
-      <section class="page-container ">
+      <section id="page1" class="page-container ">
         <header class="header-content pl pt">
           <div>
             <ul>
@@ -74,9 +74,8 @@
             <h1 class="title-1">¿Qué tipo de trámite solicitaste?</h1>
           </div>
           <section class="mid-container">
-            <div >
-
-              <div class="dropdown">
+            <div class="mid-container-dropdown">
+              <div class="dropdown-select">
                 <label for="ingreso">Primer ingreso:</label>
                 <select name="tramites">
                   <option value="solicitud">Solicitud de ingreso</option>
@@ -88,7 +87,7 @@
                   <option value="informes">Informes</option>
                 </select>
               </div>
-              <div class="dropdown">
+              <div class="dropdown-select">
                 <label for="alumnos">Alumnos:</label>
                 <select name="tramites">
                   <option value="cons-simple"
@@ -108,7 +107,7 @@
                   <option value="informes">Informes</option>
                 </select>
               </div>
-              <div class="dropdown">
+              <div class="dropdown-select">
                 <label for="egresados">Egresados:</label>
                 <select name="tramites">
                   <option value="certificado">Certificado</option>
@@ -396,7 +395,7 @@
             </div>
           </div>
           <div class="btn-div">
-            <a href="#finish" class="btn">Terminar</a>
+            <a href="#page1" class="btn">Terminar</a>
           </div>
         </section>
         <footer class="footer-content">
