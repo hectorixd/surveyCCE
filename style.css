@@ -83,7 +83,7 @@
   letter-spacing: 0.2rem;
 }
 .typo-bold {
-  font-weight: 800;
+  font-weight: 600;
 }
 .typo-midBold {
   font-weight: 400;
@@ -115,7 +115,6 @@ body {
 .btn {
   --btnBgColorPrimary: #3498db /* #70b4e0 */;
   --btnBgColorSecondary: #2980b9 /* #479ad1 */;
-  --btnBorderColor: #34495e /* #35a0b1 */;
 
   display: inline-block;
   color: var(--bgColor);
@@ -184,7 +183,6 @@ body {
 }
 .footer-content div ul {
   display: flex;
-  padding: 0 1rem;
 }
 .footer-content div ul li {
   padding: 0 0.5rem;
