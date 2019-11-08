@@ -8,4 +8,4 @@ $('a, .btn').on('click', function(event) {
 });
 
 // Block scroll for mobile device
-$('body').addClass('stop-scrolling');
+// $('body').addClass('stop-scrolling');

@@ -6,6 +6,37 @@
 }
 
 /* UTILITIES */
+/* List answer color */
+.ansRed {
+  color: #e74c3c;
+}
+.ansCarr {
+  color: #e67e22;
+}
+.ansYell {
+  color: #f39c12;
+}
+.ansGre {
+  color: #16a085;
+}
+.ansEme {
+  color: #2ecc71;
+}
+
+/* Margin */
+.m {
+  margin: 1.2rem;
+}
+.mt {
+  margin: 2rem 0 0 0;
+}
+.mr {
+  margin: 0 2rem 0 0;
+}
+.mx {
+  margin: 0 1.2rem;
+}
+
 /* Padding */
 .pt {
   padding-top: 1rem;
@@ -45,6 +76,9 @@
 .text-2 {
   font-size: 0.8rem;
 }
+.text-3 {
+  font-size: 0.4rem;
+}
 .text-space {
   letter-spacing: 0.2rem;
 }
@@ -55,13 +89,19 @@
   font-weight: 400;
 }
 
+/* Center elements */
+.content-center {
+  justify-self: center;
+  align-self: center;
+}
+
 /* GENERAL */
-#main-container {
+body {
+  /* overflow: hidden; */
   font-family: 'Roboto', sans-serif;
   line-height: 1.5;
   color: var(--textColor);
   background-color: var(--bgColor);
-  overflow-y: hidden;
 }
 
 .page-container {
@@ -70,18 +110,14 @@
   height: 100vh;
 }
 
-.stop-scrolling {
-  overflow: hidden;
-}
-
 /* COMPONENTS */
 /* Button */
 .btn {
-  --btnBgColorPrimary: #70b4e0;
-  --btnBgColorSecondary: #479ad1;
-  --btnBorderColor: #35a0b1;
+  --btnBgColorPrimary: #3498db /* #70b4e0 */;
+  --btnBgColorSecondary: #2980b9 /* #479ad1 */;
+  --btnBorderColor: #34495e /* #35a0b1 */;
 
-  display: block;
+  display: inline-block;
   color: var(--bgColor);
   background: var(--btnBgColorPrimary);
   padding: 0.5rem 2rem;
@@ -93,12 +129,6 @@
 .btn:hover {
   color: var(--bgColor);
   background: var(--btnBgColorSecondary);
-}
-
-/* Face answer */
-.answer-op div:hover {
-  background: #c2e7ff;
-  cursor: pointer;
 }
 
 /* HEADER SECTION */
@@ -113,55 +143,40 @@
   text-align: center;
 }
 
+/* Dropdown menu */
 .mid-container-dropdown {
   display: grid;
   justify-self: center;
   align-self: center;
 }
 
+/* List answer */
+.answer-op div:hover {
+  background: #c2e7ff;
+  cursor: pointer;
+}
+
 .mid-content div .answer-op {
   display: flex;
-  margin: 1.2rem;
+  justify-content: space-around;
 }
 
-.mid-content div .answer-op div {
-  width: 96px;
-  height: 96px;
-  margin: 1rem;
-}
-
-.mid-content div > i {
-  padding: 0.5rem 0;
-  /* color: green; */
-}
-
-/* Comentarios página 7 */
-.mid-content div .coment-text {
-  display: flex;
-  width: 450px;
-  justify-content: center;
-}
-
-.mid-content div .coment-text textarea {
+/* Message section */
+.content-text {
   display: block;
-  width: 150%;
-  height: 100px;
-  margin: 2rem 0 0 0;
-  padding: 1.5rem;
-  text-align: center;
+  margin: auto;
+}
+
+.content-text textarea {
+  width: 50%;
+  margin: 3rem 0 0 0;
   font-size: 1.2rem;
   border-radius: 0.5rem;
+  text-align: center;
+  padding: 1.5rem;
 }
 
 /* FOOTER */
-.footer-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 5rem;
-  overflow: hidden;
-}
-
 .footer-content div {
   display: flex;
   flex-direction: row;
