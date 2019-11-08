@@ -14,13 +14,13 @@
   color: #e67e22;
 }
 .ansYell {
-  color: #f39c12;
+  color: #f1c40f;
+}
+.ansEme {
+  color: #27ae60;
 }
 .ansGre {
   color: #16a085;
-}
-.ansEme {
-  color: #2ecc71;
 }
 
 /* Margin */
@@ -97,7 +97,7 @@
 
 /* GENERAL */
 body {
-  /* overflow: hidden; */
+  overflow: hidden;
   font-family: 'Roboto', sans-serif;
   line-height: 1.5;
   color: var(--textColor);
@@ -124,6 +124,7 @@ body {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .btn:hover {
