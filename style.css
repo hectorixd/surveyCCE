@@ -36,7 +36,9 @@
 .mx {
   margin: 0 1.2rem;
 }
-
+.my {
+  margin: 1.2rem 0;
+}
 /* Padding */
 .pt {
   padding-top: 1rem;
@@ -45,7 +47,7 @@
   padding-right: 1rem;
 }
 .pb {
-  padding-bottom: 1rem;
+  padding-bottom: 0.2rem;
 }
 .pl {
   padding-left: 1rem;
@@ -144,10 +146,22 @@ body {
 }
 
 /* Dropdown menu */
-.mid-container-dropdown {
-  display: grid;
-  justify-self: center;
-  align-self: center;
+.dropdown-select {
+  border: 1px solid var(--textColor);
+  border-radius: 5px;
+  padding: 1.2rem;
+}
+
+.dropdown-select label,
+select {
+  display: block;
+  text-align: left;
+}
+
+select {
+  height: 28px;
+  font-size: medium;
+  color: var(--textColor);
 }
 
 /* List answer */
